@@ -4,12 +4,12 @@ pipeline {
     stage('test') {
       steps {
         echo 'hello world'
-        sh 'C:\\kituri\\Maven\\apache-maven-3.5.2\\bin\\mvn clean'
+        bat 'C:\\kituri\\Maven\\apache-maven-3.5.2\\bin\\mvn clean'
       }
     }
     stage('install') {
       steps {
-        sh 'C:\\kituri\\Maven\\apache-maven-3.5.2\\bin\\mvn install'
+        bat 'C:\\kituri\\Maven\\apache-maven-3.5.2\\bin\\mvn clean'
       }
     }
   }
